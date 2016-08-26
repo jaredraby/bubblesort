@@ -9,16 +9,25 @@ Ethan likes big butts and cannot lie.
 
 **Functionality**
 
-bubblesort(array)
-    Set 3 variables: 1 for first object value, 1 for 2nd object value, 1 for the tracking index
-    loop while the index is < size
-        Read the first 2 values of the array. 
-        Do a compare of the two values
-        See if n is greater or less than n+1
-        If it is, swap the values at their respective locations
-        Push the respective indices back into the array
-    end loop
-    return sorted array
+bubblesort(array)  
+  * Set 4 variables: 
+    * Outerloop tracking
+    * Innerloop (index) tracking
+    * A and B for the n and n + 1 index values.
+  
+  * Outer loop: While loopflag = 1 loop
+    * set loopflag and index to 0
+    * loop while the index  is < size-1
+      * Read in 2 values based on the index and index+1 of the array. 
+      * Do a compare of the two values
+      * See if n is greater than n+1
+      * If it is, swap the values at their respective locations
+        * Push the respective indices back into the array
+        * Set the loop flag signaling at least 1 more pass is needed to check the loop
+      * Increment the index by 1 to check the next 2 values in the list
+      * end innerloop
+  * End outer loop
+  * return sorted array
     
 
 **Use**
