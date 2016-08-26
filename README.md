@@ -20,3 +20,14 @@ bubblesort(array)
     end loop
     return sorted array
     
+
+**Use**
+
+In python console enter the follow commands:
+
+  * `from bubblesort import bubblesort`
+  * `bubblesort(<array of your choice>)`
+
+Sorted array will be returned.
+
+
